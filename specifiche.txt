@@ -12,7 +12,7 @@
 	visione dei dati che ha inserito nel sistema
 
 4.Aggiornare il mio profilo: -l'utente può aggiornare il proprio profilo cliccando sulla pagina
-	aggiorna Dati si acede ad una nuovo forum l'utente deve compilarla con i dati che desidera aggiornare 
+	aggiorna Dati si accede ad una nuovo forum l'utente deve compilarla con i dati che desidera aggiornare 
 	il sistema valida i nuovi dati se sono idonei li registra e aggiorna
 
 
