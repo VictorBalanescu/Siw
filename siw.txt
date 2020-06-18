@@ -1,0 +1,34 @@
+ 
+          Casi d'uso: User
+
+1. Signup: -l'utente inserisce i suoi dati in una form i dati vengono validati se 
+	sono idonei il sistema crea il nuovo utente e gli esentuali collegamenti,
+	 altrimenti il sistema chiede di  inserire nuovamente i dati
+
+2. Autenticazione: -l'utente inserisci i suoi dati user name(univoco) e la password 
+	,il sistema controlla se le credentiali sono giuste puoi accedere alla home page
+
+3.Visualizzare il tuo profilo: -l'utente clicca sulla pagina User Profile  e prende
+	visione dei dati che ha inserito nel sistema
+
+4.Aggiornare il mio profilo: -l'utente può aggiornare il proprio profilo cliccando sulla pagina
+	aggiorna Dati si acede ad una nuovo forum l'utente deve compilarla con i dati che desidera aggiornare 
+	il sistema valida i nuovi dati se sono idonei li registra e aggiorna
+
+
+           Casi d'uso: Project
+
+5.Creare un nuovo Progetto: -l'utente cliccando su new Project crea un nuovo progetto 
+	inserisce il dati compilando una form il sistema controlla che abbiano tutte
+	le caratteristiche 
+
+6.Visualizzare i miei progetti: -l'utente cliccando su My Projects visualizza il sistema mostra 
+	tutti i progetti che l'utente ha creato 
+
+7.Cancellare un mio progetto: -l'utente visualizza tutti i suoi progetti tramite un 
+	pulsante elimina il progetto il sistema elimina tutti i suoi riferimenti
+
+8.Aggiungere un tag ad un mio Progetto: -l'utente visualizza la pagina con le informazioni del progetto
+	l'utente clicca su new Tag  va indirizzato su una nuova pagina, compila il form , i dati vengono validati 
+	se sono giusti viene creato un nuovo tag e aggiunto al progetto  
+	

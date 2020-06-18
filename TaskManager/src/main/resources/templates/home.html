@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="https://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>TaskManager</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}"/>
+</head>
+<body>
+	
+	<h1 th:text="'Benvenuto, ' + ${user.nome} + '!'"></h1>
+	<ul>
+	<li><h4><a th:href="@{/myProjects}">My Projects</a></h4></li>
+	<li><h4><a th:href="@{/condivisiConME}">Shared with me</a></h4></li>
+	<li><h4><a th:href="@{/newProject}">Create new Project</a></h4></li>
+	<li><h4><a th:href="@{/me}">User Profile</a></h4></li>
+	<li><h4><a th:href="@{/logout}">Logout</a></h4></li>
+	</ul>
+</body>
+</html>

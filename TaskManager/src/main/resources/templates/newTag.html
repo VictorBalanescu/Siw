@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="https://www.thymeleaf.org">
+<head>
+    <title>TaskManager</title>
+</head>
+
+<body>
+<h1>Register new Tag</h1>
+<form id = "registerTagForm"
+      th:action="@{/newTag/}+${project.id}"
+      th:object="${tagForm}"
+      method="POST">
+	<h1>stai aggiungendo un tag al progetto:<a th:text="${project.nome}">...</a></h1>
+    <table>
+        <tr>
+            <td><label for="nameInput">Name</label>
+            <td><input id=nameInput type="text" th:field="*{nome}" required placeholder="Nome"></td>
+            <td th:if="${#fields.hasErrors('nome')}" th:errors="*{nome}" th:style="'color:red'"></td>
+        </tr>
+        <tr>
+            <td><label for="coloreInput">Colore</label>
+            <td><input id=coloreInput type="text" th:field="*{colore}" required placeholder="Nome"></td>
+            <td th:if="${#fields.hasErrors('colore')}" th:errors="*{colore}" th:style="'color:red'"></td>
+        </tr>
+        <tr>
+            <td><label for="nameDescription">Description</label>
+            <td><input id=nameDescription type="text" th:field="*{descrizione}" placeholder="Desciption"></td>
+            <td th:if="${#fields.hasErrors('descrizione')}" th:errors="*{descrizione}"  th:style="'color:red'"></td>
+        </tr>
+            
+        <tr>
+            <td>
+                <button type="submit">Registra</button>
+            </td>
+        </tr>
+    </table>
+
+</form>
+</body>
+</html>

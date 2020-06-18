@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="https://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>TaskManager</title>
+    <link rel="stylesheet" th:href="@{/css/project.css}">
+</head>
+<body>
+<h1 >Queste sono le informazioni del Progetto </h1>
+	<ul>
+		<li><a th:href="@{/home}">torna alla home</a></li>
+ 		<li><a th:href="@{/newProject}">Nuovo progetto</a></li>
+		<li><a th:href="@{/myProjects}">I miei Progetti</a></li>
+	</ul>
+    <table>
+        <tr>
+            <td>Name:</td>
+            <td th:text="${projectForm.nome}">...</td>
+        </tr>
+        <tr>
+            <td>Description:</td>
+            <td th:text="${projectForm.description}">...</td>
+        </tr>
+        <tr>
+            <td>Owner:</td>
+            <td th:text="${projectForm.owner.nome}">...</td>
+        </tr>
+        </table>
+        <h1 >Tag !!</h1>
+        <p><a th:href="@{/newTag/}+${projectForm.id}">new Tag</a>
+        
+        <h1 >shared !!</h1>
+        <h2>tutto da implementare</h2>
+        <h1 >Task !!</h1>
+        <h2>tutto da implementare</h2>
+
+</body>
+</html>

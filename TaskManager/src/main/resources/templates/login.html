@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="https://www.thymeleaf.org">
+	<head>
+   		 <title>TaskManager</title>
+	</head>
+	<body>
+		<form th:action="@{/login}" method="post">
+			<table>
+				<tr>
+   			 		<td> User Name :</td>
+   			 		<td> <input type="text" name="username" required/></td>
+   				</tr>
+   				<tr>
+    				<td>Password:</td>
+    				<td> <input type="password" name="password" required/></td>
+    			</tr>
+    			<tr>
+   			 		<td><input type="submit" value="Sign In"/></td>
+   			 		</tr>
+   			 </table>
+		</form>
+	</body>
+</html>
