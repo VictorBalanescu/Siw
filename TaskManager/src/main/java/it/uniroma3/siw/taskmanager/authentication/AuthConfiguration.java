@@ -32,7 +32,7 @@ public class AuthConfiguration extends WebSecurityConfigurerAdapter {
 			//anyone
 			.antMatchers(HttpMethod.GET,"/","/index","/register","/registrazioneSuccessful","/home",
 					"/myProjects","/userProfile","/login","/condivisiConME","/newProject",
-					"/modificaDati","/modificaSuccessful","/project","/newTag").permitAll()
+					"/modificaDati","/modificaSuccessful","/project","/newTag","/css/**").permitAll()
 			.antMatchers(HttpMethod.POST,"/login","/register","/newProject","/modificaDati","/delete/project/",
 					"/newTag").permitAll()
 			// only authenticated users with ADMIN authority can access the admin pag
