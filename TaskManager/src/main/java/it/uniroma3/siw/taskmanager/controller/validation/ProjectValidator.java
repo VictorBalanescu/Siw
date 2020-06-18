@@ -20,8 +20,8 @@ public class ProjectValidator implements Validator {
 		String description= project.getDescription();
 		if(nome.isBlank())
 			errors.rejectValue("nome","required");
-		if(nome.length() < MIN_NAME_LENGTH || nome.length()>MAX_NAME_LENGTH)
-			errors.rejectValue("nome", "size");
+		if(nome.length()< MIN_NAME_LENGTH || nome.length()>MAX_NAME_LENGTH)
+			errors.rejectValue("nome","size");
 		if(description.length()>MAX_DESC_LENGTH)
 			errors.rejectValue("description", "size");
 		
